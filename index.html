@@ -23,7 +23,6 @@
             --light: #f8fafc;
             --text: #334155;
             --glass: rgba(255, 255, 255, 0.1);
-            --glass-dark: rgba(0, 0, 0, 0.1);
         }
 
         body {
@@ -33,30 +32,6 @@
             overflow-x: hidden;
             line-height: 1.6;
             color: var(--text);
-        }
-
-        /* Custom Cursor */
-        .cursor {
-            width: 20px;
-            height: 20px;
-            border: 2px solid var(--primary);
-            border-radius: 50%;
-            position: fixed;
-            pointer-events: none;
-            z-index: 9999;
-            transition: all 0.1s ease;
-            backdrop-filter: blur(10px);
-        }
-
-        .cursor-follower {
-            width: 8px;
-            height: 8px;
-            background: var(--primary);
-            border-radius: 50%;
-            position: fixed;
-            pointer-events: none;
-            z-index: 9998;
-            transition: all 0.15s ease;
         }
 
         /* Floating Navigation */
@@ -88,23 +63,6 @@
             padding: 8px 16px;
             border-radius: 25px;
             transition: all 0.3s ease;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .nav-menu a::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: -100%;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
-            transition: left 0.5s;
-        }
-
-        .nav-menu a:hover::before {
-            left: 100%;
         }
 
         .nav-menu a:hover {
@@ -119,7 +77,7 @@
             margin-right: 20px;
         }
 
-        /* Hero Section with 3D Background */
+        /* Hero Section */
         .hero {
             height: 100vh;
             position: relative;
@@ -155,38 +113,17 @@
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
-            animation: titleFloat 3s ease-in-out infinite;
-        }
-
-        @keyframes titleFloat {
-            0%, 100% { transform: translateY(0px); }
-            50% { transform: translateY(-10px); }
         }
 
         .hero-subtitle {
             font-size: 1.5rem;
             margin-bottom: 2rem;
-            opacity: 0;
-            animation: fadeInUp 1s ease 0.5s forwards;
         }
 
         .hero-description {
             font-size: 1.1rem;
             margin-bottom: 3rem;
-            opacity: 0;
-            animation: fadeInUp 1s ease 1s forwards;
             line-height: 1.8;
-        }
-
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
         }
 
         .hero-buttons {
@@ -194,8 +131,6 @@
             gap: 20px;
             justify-content: center;
             flex-wrap: wrap;
-            opacity: 0;
-            animation: fadeInUp 1s ease 1.5s forwards;
         }
 
         .btn {
@@ -206,8 +141,6 @@
             font-weight: 600;
             font-size: 1rem;
             transition: all 0.3s ease;
-            position: relative;
-            overflow: hidden;
             cursor: pointer;
             display: inline-flex;
             align-items: center;
@@ -235,22 +168,6 @@
         .btn-secondary:hover {
             background: rgba(255, 255, 255, 0.1);
             transform: translateY(-3px);
-        }
-
-        /* Glassmorphism Cards */
-        .glass-card {
-            background: rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(20px);
-            border: 1px solid rgba(255, 255, 255, 0.2);
-            border-radius: 20px;
-            padding: 30px;
-            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
-            transition: all 0.3s ease;
-        }
-
-        .glass-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
         }
 
         /* Main Content */
@@ -298,7 +215,7 @@
             border-radius: 2px;
         }
 
-        /* Interactive About Section */
+        /* About Section */
         .about-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -349,7 +266,7 @@
             opacity: 0.9;
         }
 
-        /* Interactive Skills Section */
+        /* Skills Section */
         .skills-container {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -411,7 +328,6 @@
             font-weight: 500;
             transition: all 0.3s ease;
             cursor: pointer;
-            border: 1px solid transparent;
         }
 
         .skill-tag:hover {
@@ -607,7 +523,7 @@
             transform: translateY(-2px);
         }
 
-        /* Interactive Certifications */
+        /* Certifications */
         .certifications-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -631,43 +547,6 @@
         .cert-card:hover {
             color: white;
             text-decoration: none;
-        }
-
-        .cert-link-indicator {
-            margin-top: 15px;
-            font-size: 0.9rem;
-            opacity: 0;
-            transition: all 0.3s ease;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 8px;
-        }
-
-        .cert-card:hover .cert-link-indicator {
-            opacity: 1;
-        }
-
-        .cert-card::before {
-            content: '';
-            position: absolute;
-            top: -50%;
-            right: -50%;
-            width: 200%;
-            height: 200%;
-            background: linear-gradient(45deg, transparent, rgba(255,255,255,0.1), transparent);
-            transform: rotate(45deg);
-            transition: all 0.5s;
-            opacity: 0;
-        }
-
-        .cert-card:hover::before {
-            opacity: 1;
-            top: -100%;
-            right: -100%;
-        }
-
-        .cert-card:hover {
             transform: scale(1.05) rotateY(10deg);
         }
 
@@ -713,7 +592,7 @@
             opacity: 0.9;
         }
 
-                                .contact-links {
+        .contact-links {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             gap: 20px;
@@ -786,6 +665,30 @@
             background: linear-gradient(90deg, var(--primary), var(--secondary), var(--accent));
             width: 0%;
             transition: width 0.1s ease;
+        }
+
+        /* Custom Cursor */
+        .cursor {
+            width: 20px;
+            height: 20px;
+            border: 2px solid var(--primary);
+            border-radius: 50%;
+            position: fixed;
+            pointer-events: none;
+            z-index: 9999;
+            transition: all 0.1s ease;
+            backdrop-filter: blur(10px);
+        }
+
+        .cursor-follower {
+            width: 8px;
+            height: 8px;
+            background: var(--primary);
+            border-radius: 50%;
+            position: fixed;
+            pointer-events: none;
+            z-index: 9998;
+            transition: all 0.15s ease;
         }
 
         /* Mobile Optimizations */
@@ -1105,6 +1008,34 @@
             <div class="container">
                 <h2 class="section-title animate-in">Featured Projects</h2>
                 <div class="projects-grid">
+                    <!-- Vehicle Tracking Project - Featured First -->
+                    <div class="project-card animate-in">
+                        <div class="project-header">
+                            <h3 class="project-title">Real-Time Vehicle Tracking System</h3>
+                            <p class="project-description">
+                                Comprehensive real-time vehicle tracking and movement analysis system built with Streamlit and computer vision. Features YOLO detection with background subtraction fallback, Kalman filter tracking, and interactive analytics dashboard for traffic management applications.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-badge">YOLO</span>
+                                <span class="tech-badge">OpenCV</span>
+                                <span class="tech-badge">Kalman Filter</span>
+                                <span class="tech-badge">Streamlit</span>
+                                <span class="tech-badge">Plotly</span>
+                                <span class="tech-badge">Computer Vision</span>
+                            </div>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/raghava7261/Real-Time-Vehicle-Tracking-and-Movement-Analysis" class="project-link primary" target="_blank">
+                                <i class="fas fa-car"></i>
+                                View Project
+                            </a>
+                            <a href="https://github.com/raghava7261" class="project-link secondary" target="_blank">
+                                <i class="fab fa-github"></i>
+                                GitHub Profile
+                            </a>
+                        </div>
+                    </div>
+
                     <div class="project-card animate-in">
                         <div class="project-header">
                             <h3 class="project-title">Semantic Poisoning Attacks on LLM-Integrated Blockchain Systems</h3>
@@ -1248,41 +1179,25 @@
             <div class="container">
                 <h2 class="section-title animate-in">Certifications & Achievements</h2>
                 <div class="certifications-grid">
-                    <a href="#" class="cert-card animate-in" target="_blank">
+                    <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/U4V2KTMW8X3P" class="cert-card animate-in" target="_blank">
                         <i class="cert-icon fab fa-google"></i>
                         <h3 class="cert-title">Data Analytics Professional</h3>
                         <p class="cert-issuer">Google</p>
-                        <div class="cert-link-indicator">
-                            <i class="fas fa-external-link-alt"></i>
-                            View Certificate
-                        </div>
                     </a>
-                    <a href="#" class="cert-card animate-in" target="_blank">
+                    <a href="https://www.credential.net/8551ebd9-2dd9-47f7-8e06-35398db4dad7#acc.6w8CJqQ0" class="cert-card animate-in" target="_blank">
                         <i class="cert-icon fas fa-cloud"></i>
                         <h3 class="cert-title">Cloud Digital Leader</h3>
                         <p class="cert-issuer">Google Cloud</p>
-                        <div class="cert-link-indicator">
-                            <i class="fas fa-external-link-alt"></i>
-                            View Certificate
-                        </div>
                     </a>
-                    <a href="#" class="cert-card animate-in" target="_blank">
+                    <a href="https://google.accredible.com/36a4d82f-6311-4ae1-b904-3f4e07e0d171#acc.EixsBPKX" class="cert-card animate-in" target="_blank">
                         <i class="cert-icon fas fa-cogs"></i>
                         <h3 class="cert-title">Associate Cloud Engineer</h3>
                         <p class="cert-issuer">Google Cloud</p>
-                        <div class="cert-link-indicator">
-                            <i class="fas fa-external-link-alt"></i>
-                            View Certificate
-                        </div>
                     </a>
-                    <a href="#" class="cert-card animate-in" target="_blank">
+                    <a href="https://www.credly.com/badges/cd769d51-72c0-461e-a87a-9d0866dfdbba/linked_in_profile" class="cert-card animate-in" target="_blank">
                         <i class="cert-icon fab fa-aws"></i>
                         <h3 class="cert-title">Cloud Practitioner</h3>
                         <p class="cert-issuer">Amazon Web Services</p>
-                        <div class="cert-link-indicator">
-                            <i class="fas fa-external-link-alt"></i>
-                            View Certificate
-                        </div>
                     </a>
                 </div>
             </div>
@@ -1461,21 +1376,6 @@
             mouseX = (e.clientX / window.innerWidth) * 2 - 1;
             mouseY = -(e.clientY / window.innerHeight) * 2 + 1;
         });
-
-        // Typing Effect for Skills
-        function typeWriter(element, text, speed = 50) {
-            let i = 0;
-            element.innerHTML = '';
-            
-            function type() {
-                if (i < text.length) {
-                    element.innerHTML += text.charAt(i);
-                    i++;
-                    setTimeout(type, speed);
-                }
-            }
-            type();
-        }
 
         // Interactive Stats Counter
         function animateStats() {
