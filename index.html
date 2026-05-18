@@ -95,10 +95,7 @@ nav {
   margin-bottom: 20px;
   color: var(--ink);
 }
-.hero-title em {
-  font-style: italic;
-  color: var(--accent);
-}
+.hero-title em { font-style: italic; color: var(--accent); }
 .hero-desc {
   color: var(--muted);
   font-size: 1rem;
@@ -138,15 +135,11 @@ nav {
 }
 .stat-row:hover { box-shadow: 0 4px 20px rgba(0,0,0,0.06); }
 .stat-icon {
-  width: 44px;
-  height: 44px;
+  width: 44px; height: 44px;
   background: var(--accent-light);
   border-radius: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.2rem;
-  flex-shrink: 0;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1.2rem; flex-shrink: 0;
 }
 .stat-num { font-family: var(--serif); font-size: 1.4rem; color: var(--ink); line-height: 1; }
 .stat-label { font-size: 0.78rem; color: var(--muted); margin-top: 3px; }
@@ -156,23 +149,15 @@ section { padding: 90px 0; }
 section:nth-child(even) { background: var(--white); }
 .container { max-width: 1100px; margin: 0 auto; padding: 0 32px; }
 .section-label {
-  font-size: 0.72rem;
-  font-weight: 500;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: var(--accent);
-  margin-bottom: 10px;
-  display: flex;
-  align-items: center;
-  gap: 8px;
+  font-size: 0.72rem; font-weight: 500; letter-spacing: 0.12em;
+  text-transform: uppercase; color: var(--accent); margin-bottom: 10px;
+  display: flex; align-items: center; gap: 8px;
 }
 .section-label::before { content: ''; width: 20px; height: 1px; background: var(--accent); }
 .section-title {
   font-family: var(--serif);
   font-size: clamp(1.8rem, 3vw, 2.4rem);
-  color: var(--ink);
-  letter-spacing: -0.02em;
-  margin-bottom: 48px;
+  color: var(--ink); letter-spacing: -0.02em; margin-bottom: 48px;
 }
 
 /* ABOUT */
@@ -181,12 +166,8 @@ section:nth-child(even) { background: var(--white); }
 .about-text strong { color: var(--ink); font-weight: 500; }
 .about-right { display: flex; flex-direction: column; gap: 12px; }
 .info-item {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 14px 0;
-  border-bottom: 1px solid var(--border);
-  font-size: 0.88rem;
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 14px 0; border-bottom: 1px solid var(--border); font-size: 0.88rem;
 }
 .info-label { color: var(--muted); }
 .info-value { color: var(--ink); font-weight: 500; }
@@ -196,89 +177,52 @@ section:nth-child(even) { background: var(--white); }
 /* SKILLS */
 .skills-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; }
 .skill-card {
-  background: var(--paper);
-  border: 1px solid var(--border);
-  border-radius: 14px;
-  padding: 24px;
-  transition: box-shadow 0.2s;
+  background: var(--paper); border: 1px solid var(--border);
+  border-radius: 14px; padding: 24px; transition: box-shadow 0.2s;
 }
 .skill-card:hover { box-shadow: 0 4px 20px rgba(0,0,0,0.06); }
 .skill-card-title {
-  font-family: var(--serif);
-  font-size: 1rem;
-  color: var(--ink);
-  margin-bottom: 14px;
-  display: flex;
-  align-items: center;
-  gap: 8px;
+  font-family: var(--serif); font-size: 1rem; color: var(--ink);
+  margin-bottom: 14px; display: flex; align-items: center; gap: 8px;
 }
 .skill-tags { display: flex; flex-wrap: wrap; gap: 8px; }
 .skill-tag {
-  background: var(--white);
-  border: 1px solid var(--border);
-  color: var(--muted);
-  font-size: 0.78rem;
-  padding: 5px 12px;
-  border-radius: 100px;
-  transition: all 0.2s;
+  background: var(--white); border: 1px solid var(--border);
+  color: var(--muted); font-size: 0.78rem; padding: 5px 12px;
+  border-radius: 100px; transition: all 0.2s;
 }
 .skill-tag:hover { border-color: var(--accent); color: var(--accent); background: var(--accent-light); }
 
 /* EXPERIENCE */
 .exp-list { display: flex; flex-direction: column; gap: 32px; }
 .exp-item {
-  background: var(--paper);
-  border: 1px solid var(--border);
-  border-radius: 16px;
-  padding: 28px 32px;
-  transition: box-shadow 0.2s;
+  background: var(--paper); border: 1px solid var(--border);
+  border-radius: 16px; padding: 28px 32px; transition: box-shadow 0.2s;
 }
 .exp-item:hover { box-shadow: 0 4px 24px rgba(0,0,0,0.06); }
 .exp-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  margin-bottom: 6px;
-  flex-wrap: wrap;
-  gap: 8px;
+  display: flex; justify-content: space-between; align-items: flex-start;
+  margin-bottom: 6px; flex-wrap: wrap; gap: 8px;
 }
 .exp-title { font-family: var(--serif); font-size: 1.1rem; color: var(--ink); }
 .exp-date {
-  font-size: 0.78rem;
-  color: var(--muted);
-  background: var(--white);
-  border: 1px solid var(--border);
-  padding: 4px 12px;
-  border-radius: 100px;
-  white-space: nowrap;
+  font-size: 0.78rem; color: var(--muted); background: var(--white);
+  border: 1px solid var(--border); padding: 4px 12px; border-radius: 100px; white-space: nowrap;
 }
 .exp-company { font-size: 0.85rem; color: var(--accent); font-weight: 500; margin-bottom: 16px; }
 .exp-bullets { list-style: none; display: flex; flex-direction: column; gap: 8px; }
 .exp-bullets li {
-  font-size: 0.88rem;
-  color: var(--muted);
-  padding-left: 16px;
-  position: relative;
-  line-height: 1.7;
+  font-size: 0.88rem; color: var(--muted);
+  padding-left: 16px; position: relative; line-height: 1.7;
 }
-.exp-bullets li::before {
-  content: '—';
-  position: absolute;
-  left: 0;
-  color: var(--accent);
-  font-weight: 400;
-}
+.exp-bullets li::before { content: '—'; position: absolute; left: 0; color: var(--accent); font-weight: 400; }
 
 /* PROJECTS */
 .projects-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; }
 .project-card {
-  background: var(--paper);
-  border: 1px solid var(--border);
-  border-radius: 16px;
-  padding: 28px;
-  display: flex;
-  flex-direction: column;
-  gap: 14px;
+  background: var(--paper); border: 1px solid var(--border);
+  border-radius: 16px; padding: 28px;
+  display: flex; flex-direction: column; gap: 14px;
   transition: box-shadow 0.2s, transform 0.2s;
 }
 .project-card:hover { box-shadow: 0 6px 28px rgba(0,0,0,0.08); transform: translateY(-2px); }
@@ -286,48 +230,29 @@ section:nth-child(even) { background: var(--white); }
 .project-title { font-family: var(--serif); font-size: 1.1rem; color: var(--ink); }
 .project-stack { display: flex; flex-wrap: wrap; gap: 6px; }
 .project-badge {
-  background: var(--accent-light);
-  color: var(--accent);
-  font-size: 0.72rem;
-  font-weight: 500;
-  padding: 4px 10px;
-  border-radius: 100px;
+  background: var(--accent-light); color: var(--accent);
+  font-size: 0.72rem; font-weight: 500; padding: 4px 10px; border-radius: 100px;
 }
 .project-desc { font-size: 0.88rem; color: var(--muted); line-height: 1.7; }
 .project-bullets { list-style: none; display: flex; flex-direction: column; gap: 6px; }
 .project-bullets li {
-  font-size: 0.85rem;
-  color: var(--muted);
-  padding-left: 14px;
-  position: relative;
-  line-height: 1.6;
+  font-size: 0.85rem; color: var(--muted);
+  padding-left: 14px; position: relative; line-height: 1.6;
 }
 .project-bullets li::before { content: '•'; position: absolute; left: 0; color: var(--accent); }
 .project-link {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  font-size: 0.82rem;
-  font-weight: 500;
-  color: var(--accent);
-  text-decoration: none;
-  margin-top: auto;
+  display: inline-flex; align-items: center; gap: 6px;
+  font-size: 0.82rem; font-weight: 500; color: var(--accent);
+  text-decoration: none; margin-top: auto;
 }
 .project-link:hover { text-decoration: underline; }
 
 /* CERTIFICATIONS */
 .certs-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
 .cert-card {
-  background: var(--paper);
-  border: 1px solid var(--border);
-  border-radius: 14px;
-  padding: 24px;
-  text-decoration: none;
-  color: var(--ink);
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  transition: all 0.2s;
+  background: var(--paper); border: 1px solid var(--border);
+  border-radius: 14px; padding: 24px; text-decoration: none;
+  color: var(--ink); display: flex; flex-direction: column; gap: 10px; transition: all 0.2s;
 }
 .cert-card:hover { border-color: var(--accent); box-shadow: 0 4px 20px rgba(45,106,79,0.1); }
 .cert-icon { font-size: 1.6rem; }
@@ -343,86 +268,48 @@ section:nth-child(even) { background: var(--white); }
 .contact-desc { color: rgba(255,255,255,0.6); font-size: 0.96rem; line-height: 1.8; margin-bottom: 32px; }
 .contact-items { display: flex; flex-direction: column; gap: 16px; }
 .contact-item {
-  display: flex;
-  align-items: center;
-  gap: 14px;
-  color: rgba(255,255,255,0.7);
-  text-decoration: none;
-  font-size: 0.9rem;
-  transition: color 0.2s;
+  display: flex; align-items: center; gap: 14px;
+  color: rgba(255,255,255,0.7); text-decoration: none;
+  font-size: 0.9rem; transition: color 0.2s;
 }
 .contact-item:hover { color: #fff; }
 .contact-icon {
-  width: 40px;
-  height: 40px;
-  background: rgba(255,255,255,0.08);
-  border-radius: 8px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1rem;
-  flex-shrink: 0;
+  width: 40px; height: 40px; background: rgba(255,255,255,0.08);
+  border-radius: 8px; display: flex; align-items: center; justify-content: center;
+  font-size: 1rem; flex-shrink: 0;
 }
 .contact-right { display: flex; flex-direction: column; gap: 16px; }
 .contact-link-card {
-  background: rgba(255,255,255,0.06);
-  border: 1px solid rgba(255,255,255,0.1);
-  border-radius: 12px;
-  padding: 20px 24px;
-  text-decoration: none;
-  color: rgba(255,255,255,0.8);
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  transition: all 0.2s;
-  font-size: 0.9rem;
+  background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 12px; padding: 20px 24px; text-decoration: none;
+  color: rgba(255,255,255,0.8); display: flex; align-items: center;
+  justify-content: space-between; transition: all 0.2s; font-size: 0.9rem;
 }
 .contact-link-card:hover { background: rgba(255,255,255,0.1); color: #fff; }
 .contact-link-label { font-family: var(--serif); font-size: 1rem; color: #fff; display: block; margin-bottom: 3px; }
 
 /* FOOTER */
 footer {
-  background: var(--ink);
-  border-top: 1px solid rgba(255,255,255,0.08);
-  padding: 28px 32px;
-  text-align: center;
-  color: rgba(255,255,255,0.3);
-  font-size: 0.82rem;
+  background: var(--ink); border-top: 1px solid rgba(255,255,255,0.08);
+  padding: 28px 32px; text-align: center;
+  color: rgba(255,255,255,0.3); font-size: 0.82rem;
 }
 
 /* BACK TO TOP */
 .back-top {
-  position: fixed;
-  bottom: 28px;
-  right: 28px;
-  width: 44px;
-  height: 44px;
-  background: var(--ink);
-  color: #fff;
-  border: none;
-  border-radius: 50%;
-  cursor: pointer;
-  font-size: 1rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  opacity: 0;
-  transition: all 0.2s;
-  z-index: 99;
+  position: fixed; bottom: 28px; right: 28px;
+  width: 44px; height: 44px; background: var(--ink); color: #fff;
+  border: none; border-radius: 50%; cursor: pointer; font-size: 1rem;
+  display: flex; align-items: center; justify-content: center;
+  opacity: 0; transition: all 0.2s; z-index: 99;
 }
 .back-top.visible { opacity: 1; }
 .back-top:hover { background: var(--accent); }
 
 /* SCROLL PROGRESS */
 .progress-bar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 2px;
-  background: var(--accent);
-  z-index: 200;
-  transition: width 0.1s;
-  width: 0%;
+  position: fixed; top: 0; left: 0; height: 2px;
+  background: var(--accent); z-index: 200; transition: width 0.1s; width: 0%;
 }
 
 /* RESPONSIVE */
@@ -468,7 +355,7 @@ footer {
         Software <em>Engineer</em>
       </h1>
       <p class="hero-desc">
-        3+ years building production-grade systems with Node.js, React, PostgreSQL, and cloud infrastructure on AWS and GCP. Currently finishing M.S. Computer Science at Kennesaw State University.
+        3+ years building production-grade distributed systems, microservices, and AI-integrated applications using Java, Python, Node.js, React, and cloud infrastructure on AWS and GCP. M.S. Computer Science — Kennesaw State University, GPA 3.9.
       </p>
       <div class="hero-links">
         <a href="#contact" class="btn btn-primary">Get in touch</a>
@@ -480,29 +367,29 @@ footer {
       <div class="stat-row">
         <div class="stat-icon">⚡</div>
         <div>
-          <div class="stat-num">4+</div>
-          <div class="stat-label">Years of production experience</div>
+          <div class="stat-num">3+</div>
+          <div class="stat-label">Years of production engineering experience</div>
         </div>
       </div>
       <div class="stat-row">
         <div class="stat-icon">🏗</div>
         <div>
           <div class="stat-num">5</div>
-          <div class="stat-label">Microservices shipped in one project</div>
+          <div class="stat-label">Microservices shipped in one platform</div>
         </div>
       </div>
       <div class="stat-row">
         <div class="stat-icon">🎓</div>
         <div>
           <div class="stat-num">3.9</div>
-          <div class="stat-label">GPA — M.S. Computer Science</div>
+          <div class="stat-label">GPA — M.S. Computer Science, KSU</div>
         </div>
       </div>
       <div class="stat-row">
         <div class="stat-icon">☁️</div>
         <div>
-          <div class="stat-num">3</div>
-          <div class="stat-label">Cloud certifications (AWS + GCP)</div>
+          <div class="stat-num">5</div>
+          <div class="stat-label">Cloud & AI certifications</div>
         </div>
       </div>
     </div>
@@ -516,10 +403,10 @@ footer {
     <h2 class="section-title">Who I am</h2>
     <div class="about-grid">
       <div class="about-text">
-        <p>I'm a Full-Stack Software Engineer with <strong>4 years of production experience</strong> building scalable backend systems, RESTful microservices, and real-time web applications. I spent over two years at HCL Technologies building enterprise systems for SKF's global operations using Node.js, React, and PostgreSQL on GCP.</p>
-        <p>At Kennesaw State University I've been doing research on <strong>LLM-integrated distributed systems</strong> — specifically evaluating how AI agents behave under adversarial conditions in blockchain environments, building RAG pipelines, and fine-tuning LLaMA-2 models.</p>
-        <p>Most recently I built <strong>Destination Together</strong> — a full-stack travel platform with 5 Node.js microservices, real-time chat via Socket.io, Google Gemini AI integration, and Docker containerized deployment. I like building things that actually work in production.</p>
-        <p>I'm currently looking for <strong>Full-Stack or Backend Software Engineer roles</strong> where I can contribute to real systems and grow with a strong team.</p>
+        <p>I'm a Full-Stack Software Engineer with <strong>3+ years of production experience</strong> building scalable backend systems, distributed microservices, and AI-integrated web applications. I spent over two years at HCL Technologies building enterprise systems for SKF's global operations using Java, Node.js, React, and PostgreSQL on GCP — reducing technical debt 30% and improving operational efficiency 9%.</p>
+        <p>At Kennesaw State University I've been doing research on <strong>LLM-integrated distributed systems</strong> — specifically evaluating how AI agents behave under adversarial conditions in blockchain environments, building RAG pipelines with LLaMA-2 and FAISS, and studying semantic poisoning attack vectors on LLM-powered systems.</p>
+        <p>I built <strong>Destination Together</strong> — a full-stack collaborative travel platform with 5 Node.js microservices, real-time Socket.io messaging, Google Gemini AI integration, JWT auth, and Docker containerized deployment. I like building systems that solve real problems and actually hold up in production.</p>
+        <p>I'm currently looking for <strong>Full-Stack, Backend, or AI Software Engineer roles</strong> where I can contribute to real systems and grow with a strong engineering team.</p>
       </div>
       <div class="about-right">
         <div class="info-item">
@@ -532,7 +419,7 @@ footer {
         </div>
         <div class="info-item">
           <span class="info-label">LinkedIn</span>
-          <a href="https://www.linkedin.com/in/raghava-sammeta-7982181ba/" class="info-link" target="_blank">raghava-sammeta ↗</a>
+          <a href="https://www.linkedin.com/in/raghava-s-7982181ba/" class="info-link" target="_blank">raghava-s-7982181ba ↗</a>
         </div>
         <div class="info-item">
           <span class="info-label">GitHub</span>
@@ -544,7 +431,7 @@ footer {
         </div>
         <div class="info-item">
           <span class="info-label">Education</span>
-          <span class="info-value">M.S. CS — KSU 2025</span>
+          <span class="info-value">M.S. CS — KSU, Dec 2025</span>
         </div>
         <div class="info-item">
           <span class="info-label">Status</span>
@@ -564,18 +451,25 @@ footer {
       <div class="skill-card">
         <div class="skill-card-title">🖥 Languages</div>
         <div class="skill-tags">
+          <span class="skill-tag">Java</span>
+          <span class="skill-tag">Python</span>
           <span class="skill-tag">JavaScript (ES6+)</span>
           <span class="skill-tag">TypeScript</span>
-          <span class="skill-tag">Python</span>
           <span class="skill-tag">SQL</span>
+          <span class="skill-tag">Go</span>
+          <span class="skill-tag">C++</span>
+          <span class="skill-tag">Rust</span>
         </div>
       </div>
       <div class="skill-card">
         <div class="skill-card-title">⚛️ Frontend</div>
         <div class="skill-tags">
           <span class="skill-tag">React</span>
+          <span class="skill-tag">Next.js</span>
           <span class="skill-tag">Redux</span>
-          <span class="skill-tag">React Router</span>
+          <span class="skill-tag">Angular</span>
+          <span class="skill-tag">HTML5</span>
+          <span class="skill-tag">CSS3</span>
           <span class="skill-tag">Tailwind CSS</span>
           <span class="skill-tag">Responsive Design</span>
         </div>
@@ -584,10 +478,13 @@ footer {
         <div class="skill-card-title">🔧 Backend</div>
         <div class="skill-tags">
           <span class="skill-tag">Node.js</span>
+          <span class="skill-tag">Spring Boot</span>
           <span class="skill-tag">Express.js</span>
           <span class="skill-tag">Flask</span>
+          <span class="skill-tag">Django</span>
           <span class="skill-tag">RESTful APIs</span>
           <span class="skill-tag">GraphQL</span>
+          <span class="skill-tag">gRPC</span>
           <span class="skill-tag">Microservices</span>
           <span class="skill-tag">API Gateway</span>
         </div>
@@ -596,7 +493,10 @@ footer {
         <div class="skill-card-title">🗄 Databases</div>
         <div class="skill-tags">
           <span class="skill-tag">PostgreSQL</span>
+          <span class="skill-tag">MongoDB</span>
           <span class="skill-tag">MySQL</span>
+          <span class="skill-tag">Redis</span>
+          <span class="skill-tag">Cassandra</span>
           <span class="skill-tag">Schema Design</span>
           <span class="skill-tag">Query Optimization</span>
           <span class="skill-tag">ACID Transactions</span>
@@ -608,9 +508,11 @@ footer {
           <span class="skill-tag">AWS (Certified)</span>
           <span class="skill-tag">GCP (Certified ACE)</span>
           <span class="skill-tag">Docker</span>
-          <span class="skill-tag">Docker Compose</span>
-          <span class="skill-tag">Nginx</span>
+          <span class="skill-tag">Kubernetes</span>
+          <span class="skill-tag">Jenkins</span>
           <span class="skill-tag">CI/CD</span>
+          <span class="skill-tag">Prometheus</span>
+          <span class="skill-tag">Grafana</span>
           <span class="skill-tag">Airflow</span>
           <span class="skill-tag">Git</span>
         </div>
@@ -622,9 +524,13 @@ footer {
           <span class="skill-tag">LLM Integration</span>
           <span class="skill-tag">RAG Pipelines</span>
           <span class="skill-tag">LLaMA-2</span>
+          <span class="skill-tag">Prompt Engineering</span>
+          <span class="skill-tag">FAISS</span>
+          <span class="skill-tag">GitHub Copilot</span>
+          <span class="skill-tag">Kafka</span>
+          <span class="skill-tag">RabbitMQ</span>
           <span class="skill-tag">Socket.io</span>
           <span class="skill-tag">JWT</span>
-          <span class="skill-tag">RabbitMQ/Kafka</span>
           <span class="skill-tag">WebSockets</span>
         </div>
       </div>
@@ -646,33 +552,23 @@ footer {
         </div>
         <div class="exp-company">Kennesaw State University · Atlanta, GA</div>
         <ul class="exp-bullets">
-          <li>Designed a distributed Ethereum-based system using Node.js and Python to evaluate LLM-driven agents under adversarial conditions, executing 1,000+ automated test scenarios to benchmark fault tolerance and system reliability</li>
-          <li>Engineered a RAG pipeline integrating LLaMA-2 with vector retrieval and Python inference logic, reducing manual data-lookup time by 40%; containerized the full stack with Docker into a reproducible production service</li>
-          <li>Built PostgreSQL backend pipelines to log and query high-volume blockchain transaction data and smart contract metrics, enabling scalable analysis of distributed system performance across adversarial test scenarios</li>
+          <li>Designed a distributed system using Node.js and Python to evaluate LLM-driven agents under adversarial conditions, executing 1,000+ automated test scenarios to benchmark fault tolerance and system reliability.</li>
+          <li>Engineered a RAG pipeline integrating LLaMA-2 with FAISS vector retrieval and Python inference logic, reducing manual data-lookup time by 40%; containerized the full stack with Docker into a reproducible production service.</li>
+          <li>Built PostgreSQL backend pipelines to log and query high-volume blockchain transaction data and smart contract metrics, enabling scalable analysis of distributed system performance across adversarial test scenarios.</li>
         </ul>
       </div>
 
       <div class="exp-item">
         <div class="exp-header">
-          <div class="exp-title">Senior Software Engineer</div>
-          <div class="exp-date">Mar 2023 – Jul 2024</div>
-        </div>
-        <div class="exp-company">HCL Technologies · Global Enterprise</div>
-        <ul class="exp-bullets">
-          <li>Architected full-stack features using Node.js, TypeScript, React, and PostgreSQL for SKF's global enterprise operations, owning the complete lifecycle from REST API design to React frontend rendering to database schema optimization</li>
-          <li>Engineered microservices and RESTful APIs consumed by React frontends with modular service boundaries, integrated with distributed GCP systems; reduced technical debt 30% and improved operational efficiency 9%</li>
-          <li>Optimized PostgreSQL schemas and queries using EXPLAIN ANALYZE and composite indexes; built GCP Airflow data pipelines enabling real-time reporting dashboards with sub-second latency for global enterprise clients</li>
-        </ul>
-      </div>
-
-      <div class="exp-item">
-        <div class="exp-header">
-          <div class="exp-title">Post Graduate Engineer Trainee</div>
-          <div class="exp-date">Aug 2022 – Mar 2023</div>
+          <div class="exp-title">Software Engineer</div>
+          <div class="exp-date">Feb 2022 – Jul 2024</div>
         </div>
         <div class="exp-company">HCL Technologies</div>
         <ul class="exp-bullets">
-          <li>Developed Node.js backend services and React components for internal enterprise platforms, contributing to RESTful API design, code reviews, and CI/CD pipeline improvements reducing deployment time across production services</li>
+          <li>Architected full-stack features using Node.js, TypeScript, React, and PostgreSQL for SKF's global enterprise operations, owning the complete lifecycle from REST API design to frontend rendering to database schema optimization.</li>
+          <li>Engineered microservices and RESTful APIs with modular service boundaries on GCP, ensuring high availability; reduced technical debt 30% and improved operational efficiency 9%.</li>
+          <li>Optimized PostgreSQL schemas and queries using EXPLAIN ANALYZE and composite indexes; built GCP Airflow data pipelines enabling real-time reporting dashboards with sub-second latency for global enterprise clients.</li>
+          <li>Contributed to RESTful API design, code reviews, and CI/CD pipeline improvements reducing deployment time across production services.</li>
         </ul>
       </div>
 
@@ -681,9 +577,9 @@ footer {
           <div class="exp-title">Software Engineer Intern</div>
           <div class="exp-date">Aug 2021 – Jan 2022</div>
         </div>
-        <div class="exp-company">DXC Technology · Remote</div>
+        <div class="exp-company">DXC Technology</div>
         <ul class="exp-bullets">
-          <li>Built React frontend components and Node.js API endpoints for enterprise tools, implemented SQL schemas for structured data reporting, and deployed services on AWS EC2 gaining cloud infrastructure and full-stack development experience</li>
+          <li>Built React frontend components and Node.js API endpoints for enterprise tools, implemented SQL schemas for structured data reporting, and deployed services on AWS EC2 gaining cloud infrastructure and full-stack development experience.</li>
         </ul>
       </div>
 
@@ -708,26 +604,32 @@ footer {
           <span class="project-badge">Google Gemini AI</span>
           <span class="project-badge">JWT</span>
           <span class="project-badge">Socket.io</span>
+          <span class="project-badge">Nginx</span>
+          <span class="project-badge">Kubernetes</span>
         </div>
         <ul class="project-bullets">
-          <li>Architected a 5-service microservices platform with a centralized API Gateway handling JWT authentication and request routing; engineered PostgreSQL ACID transactions with ROLLBACK to prevent race conditions during concurrent trip joins across 6 normalized tables</li>
-          <li>Integrated Google Gemini 1.5 Flash LLM with structured JSON prompt engineering to dynamically generate route-aware POI suggestions; containerized an 8-service stack with Docker Compose and Nginx enabling one-command full-stack deployment</li>
-          <li>Implemented real-time group messaging using Socket.io with REST polling fallback and built a Venmo/Zelle deep-link payment flow for private vehicle trips with a fare calculator supporting 3 trip types and group discounts up to 50% off</li>
+          <li>Architected a 5-service microservices platform with a centralized API Gateway handling JWT authentication and request routing; engineered PostgreSQL ACID transactions with BEGIN/COMMIT/ROLLBACK to prevent race conditions during concurrent trip joins across 6 normalized tables.</li>
+          <li>Integrated Google Gemini 1.5 Flash LLM with structured JSON prompt engineering to dynamically generate route-aware POI suggestions; containerized an 8-service stack with Docker Compose and Nginx reverse proxy enabling one-command full-stack deployment.</li>
+          <li>Implemented real-time group messaging using Socket.io with REST polling fallback, persisting all messages to PostgreSQL with sender metadata enabling cross-session chat history across concurrent trip group conversations.</li>
+          <li>Engineered a Zelle deep-link payment flow for private vehicle trips pre-filling recipient, amount, and trip note via URL parameters; built a fare split calculator supporting 3 trip types with group discounts up to 50% off based on passenger count.</li>
         </ul>
         <a href="https://github.com/raghava7261/destination-together" target="_blank" class="project-link">View on GitHub ↗</a>
       </div>
 
       <div class="project-card">
-        <div class="project-title">Large-Scale Cybersecurity Threat Detection</div>
+        <div class="project-title">Large-Scale Cybersecurity Threat Detection using Deep Learning</div>
         <div class="project-stack">
           <span class="project-badge">PySpark</span>
           <span class="project-badge">React</span>
           <span class="project-badge">Deep Learning</span>
+          <span class="project-badge">Python</span>
+          <span class="project-badge">Docker</span>
+          <span class="project-badge">AWS EC2</span>
           <span class="project-badge">UNSW-NB15</span>
         </div>
         <ul class="project-bullets">
-          <li>Built a PySpark pipeline for real-time network traffic classification on UNSW-NB15 achieving 96% accuracy</li>
-          <li>Designed a React visualization interface displaying live threat alerts and classification metrics for security analysts</li>
+          <li>Built a PySpark pipeline for real-time network traffic classification on UNSW-NB15 achieving 96% accuracy.</li>
+          <li>Designed a React visualization interface displaying live threat alerts and classification metrics for security analysts.</li>
         </ul>
         <a href="https://github.com/raghava7261/Large-Scale-Cyber-Security-threat-detection-system-Deep-Learning-" target="_blank" class="project-link">View on GitHub ↗</a>
       </div>
@@ -738,12 +640,13 @@ footer {
           <span class="project-badge">LLaMA-2</span>
           <span class="project-badge">RAG</span>
           <span class="project-badge">FAISS</span>
+          <span class="project-badge">Python</span>
           <span class="project-badge">Flask</span>
+          <span class="project-badge">sentence-transformers</span>
         </div>
         <ul class="project-bullets">
-          <li>Developed novel semantic poisoning attack framework targeting LLM-powered blockchain systems</li>
-          <li>Built steganographic injection pipeline achieving 100% imperceptibility and 90%+ attack success rate</li>
-          <li>Engineered RAG system with sentence-transformers and FAISS for blockchain knowledge retrieval</li>
+          <li>Developed a novel semantic poisoning attack framework targeting LLM-powered blockchain systems, achieving 100% imperceptibility and 90%+ attack success rate via steganographic injection pipelines.</li>
+          <li>Engineered a RAG system with sentence-transformers and FAISS for blockchain knowledge retrieval; evaluated adversarial robustness across LLaMA-2 inference configurations.</li>
         </ul>
         <a href="https://github.com/raghava7261/Semantic-Poisoning-Attacks-on-LLM-Integrated-Blockchain-System" target="_blank" class="project-link">View on GitHub ↗</a>
       </div>
@@ -794,7 +697,7 @@ footer {
     <h2 class="section-title">Let's talk</h2>
     <div class="contact-grid">
       <div>
-        <p class="contact-desc">I'm currently open to full-time Software Engineer roles. If you're working on something interesting or just want to chat about tech, feel free to reach out.</p>
+        <p class="contact-desc">I'm currently open to full-time Software Engineer roles — full-stack, backend, or AI-focused. If you're working on something interesting or want to chat about tech, feel free to reach out.</p>
         <div class="contact-items">
           <a href="mailto:raghavasammeta7@gmail.com" class="contact-item">
             <div class="contact-icon">✉️</div>
@@ -804,9 +707,9 @@ footer {
             <div class="contact-icon">📞</div>
             (943) 255-3891
           </a>
-          <a href="https://linkedin.com/in/raghava-sammeta" target="_blank" class="contact-item">
+          <a href="https://www.linkedin.com/in/raghava-s-7982181ba/" target="_blank" class="contact-item">
             <div class="contact-icon">💼</div>
-            linkedin.com/in/raghava-sammeta
+            linkedin.com/in/raghava-s-7982181ba
           </a>
           <a href="https://leetcode.com/u/raghava2028/" target="_blank" class="contact-item">
             <div class="contact-icon">🧩</div>
@@ -848,7 +751,6 @@ footer {
 <button class="back-top" id="backTop" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
 
 <script>
-  // Scroll progress
   window.addEventListener('scroll', () => {
     const scrollTop = window.pageYOffset;
     const docHeight = document.documentElement.scrollHeight - window.innerHeight;
